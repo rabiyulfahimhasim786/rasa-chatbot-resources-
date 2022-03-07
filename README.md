@@ -39,3 +39,10 @@ pip3 install rasa-x --extra-index-url https://pypi.rasa.com/simple
 
 pip3 install rasa-x==0.40 --extra-index-url https://pypi.rasa.com/simple
 ```
+
+
+```
+# version checking
+
+rasa --version
+```
