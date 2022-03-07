@@ -1,0 +1,55 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: menu path
+  steps:
+  - intent: menu
+  - action: utter_menu
+
+- story: vegeterian path
+  steps:
+  - intent: vegeterian
+  - action: utter_vegeterian
+
+- story: non-veg path
+  steps:
+  - intent: non_veg
+  - action: utter_non_veg
+
+- story: no-need path
+  steps:
+  - intent: no_need
+  - action: utter_no_need
+
+- story: order path
+  steps:
+  - intent: order_name
+  - action: utter_order_name

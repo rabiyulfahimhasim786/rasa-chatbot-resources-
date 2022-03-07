@@ -1,0 +1,140 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - deny
+    - I don't want
+    - never
+    - I don't think so
+    - don't like that
+    - no-way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: vegeterian
+  examples: |
+    - I am looking some vegeterian dishes?
+    - I need a vegeterian dishes
+    - I need a vegeterian
+    - vegeterian dishes
+    - vegeterian
+
+- intent: non_veg
+  examples: |
+    - I am looking some non-vegeterian dishes?
+    - I need a non-vegeterian dishes
+    - I need a non-vegeterian
+    - non-vegeterian dishes
+    - non-vegeterian
+
+- intent: menu
+  examples: |
+    - I am looking to eat here something?
+    - What are the dished available here
+    - please give me a menu
+    - Where is the menu card
+    - I need a menu
+    - I need a menu-card to place my order
+
+- intent: no_need
+  examples: |
+    - No
+    - No need
+    - Is that fine, no more need
+    - I dont want that
+    - I dont need more
+    - Is that fine
+    - Is enough
+
+- intent: order_name
+  examples: |
+    - I need a curd rice
+    - I need a vada
+    - I need a medhu vada
+    - I need a masal vada
+    - I need a pani poori
+    - I need a egg curry
+    - I need a butter chiken
+    - I need a tandoori
+    - I need a barbeque
+    - I need a shawarma
