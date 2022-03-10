@@ -1,0 +1,94 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - vegeterian
+  - non_veg
+  - menu
+  - no_need
+  - order_name
+
+forms:
+  name_form:
+    first_name:
+    - type: from_text
+    last_name:
+    - type: from_text
+
+slots:
+  first_name:
+    type: text
+  last_name:
+    type: text
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_first_name:
+  - text: What is your first name?
+
+  utter_ask_last_name:
+  - text: So {first_name}, what is your last name?
+
+  utter_submit:
+  - text: Ok. Thanks!
+
+  utter_slots_values:
+  - text: "I will remember that your name is {first_name} {last_name}! and what would you looking for?"
+    buttons:
+    - title: "Veg"
+      payload: "/vegeterian"
+    - title: "Non-Veg"
+      payload: "/non_veg"
+
+  utter_vegeterian:
+  - text: "We are having curd rice, gopi manchoorian, vada, medhuvada, etc.."
+
+  utter_non_veg:
+  - text: "We have an egg curry, chicken butter masala, fish curry, boiled eggs, etc.."
+
+  utter_menu:
+  - text: "What would you looking for?"
+    buttons:
+    - title: "Veg"
+      payload: "/vegeterian"
+    - title: "Non-Veg"
+      payload: "/non_veg"
+      
+  utter_no_need:
+  - text: "Thanks, We will place your order shortly, soon our representative will be contact you."
+
+  utter_order_name:
+  - text: "Is there anything else sir?"
+
+actions:
+- utter_greet
+- utter_slots_values
+- utter_submit
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
