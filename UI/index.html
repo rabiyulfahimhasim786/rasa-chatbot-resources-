@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>Project Rescuebot</title>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel= "stylesheet" type= "text/css" href= "static/css/style.css">
+      <!--Main css-->
+      <link rel= "stylesheet" type= "text/css" href= "static/css/materialize.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   </head>
+   <body>
+   
+   
+   <header class="v-header container">
+    <div class="fullscreen-video-wrap">
+      <!--  https://www.videvo.net/video/typing-on-computer-white-bg/4475/ -->
+      <!-- DO NOT USE THIS VIDEO, I JUST NEEDED A HOSTED VIDEO FOR THIS CODEPEN> USE THE ONE ABOVE -->
+      <video src="https://production.cdmycdn.com/assets/marketing-pages/intensives/bws/coding-scenes-9a2031e8142b40bdb5d936d5eef33dfa.mp4" autoplay="" loop="">
+    </video>
+    </div>
+    <div class="header-overlay"></div>
+    <div class="header-content text-md-center">
+      <h1>Hello , I'm Rescue bot </h1>
+      <p>i'm a chat bot , and i can reply for your day to day life support queries . i'm developed by humans </p>
+      <a class="btn">Find Out More</a>
+    </div>
+  </header>
+
+  <section class="section section-a">
+    <div class="container">
+      <h5>Quote of the day</h5>
+      <p> " DOCTORS ARE GREAT  -- AS LONG AS YOU DONT NEED THEM "!</p>
+    </div>
+  </section>
+
+      <div class="container">
+         <div class="widget">
+            <div class="chat_header">
+               <!--Add the name of the bot here -->
+               <span style="color:white;margin-left: 5px;">RescueBot </span>
+               <span style="color:white;margin-right: 5px;float:right;margin-top: 5px;" id="close">
+               <i class="material-icons">close</i>
+               </span>
+            </div>
+            <!--Chatbot contents goes here -->
+            <div class="chats" id="chats">
+               <div class="clearfix"></div>
+            </div>
+            <!--user typing indicator -->
+            <div class="keypad" >
+               <input type="text" id="keypad" class="usrInput browser-default" placeholder="Type a message..." autocomplete="off">
+            </div>
+         </div>
+         <!--bot widget -->
+         <div class="profile_div" id="profile_div">
+            <img class="imgProfile" src="static/img/botAvatar.png"/>
+         </div>
+      </div>
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="static/js/materialize.min.js"></script>
+      <!--Main Script -->
+      <script type="text/javascript" src="static/js/script.js"></script>
+   </body>
+</html>
