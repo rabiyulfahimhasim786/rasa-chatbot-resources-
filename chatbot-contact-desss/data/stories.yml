@@ -1,0 +1,81 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: company-works path
+  steps:
+  - intent: company_works
+  - action: utter_company_works
+
+- story: job-apply path
+  steps:
+  - intent: job_apply
+  - action: utter_job_apply
+
+- story: info path
+  steps:
+  - intent: info
+  - action: utter_info
+
+- story: consulting path
+  steps:
+  - intent: consulting
+  - action: utter_consulting
+
+- story: staffing path
+  steps:
+  - intent: staffing
+  - action: utter_staffing_services
+
+- story: sap path
+  steps:
+  - intent: sap
+  - action: utter_sap
+
+  
+
+- story: happy name path
+  steps:
+  - intent: tell_name
+  - action: utter_name
+  - action: utter_ask_name
+  - intent: my_name
+    entities:
+    - name: "rahul"
+  - slot_was_set:
+      - name: "rahul"
+  - action: utter_ask_number
+  - intent: mobile_number
+    entities:
+    - number: "8209829808"
+  - slot_was_set:
+      - number: "8209829808"
+#  - action: utter_thanks
+  - action: action_submit

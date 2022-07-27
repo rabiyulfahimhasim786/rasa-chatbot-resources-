@@ -1,0 +1,199 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - fine
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: company_works
+  examples: |
+    - What are the services your company is offering?
+    - Are you looking for our services?
+    - services
+    - What are the technical services your company is offering?
+    - What are the technical related services your company is offering now
+    - what are the consultings you are offering
+    - what are the Consultings you are offering
+    - what are the Solutions you are offering
+    - what are the solutions you are offering
+    - what are the Services you are offering
+    - what are the services you are offering
+    - what are the Industry you are offering
+    - what are the industry you are offering
+
+- intent: staffing
+  examples: |
+    - What are the staffing related work your company is offering?
+    - What are the hiring related work your company is offering?
+    - staffing
+    - Contract staffing
+    - Direct Hire
+    - Contact to perm
+
+- intent: sap
+  examples: |
+    - SAP
+    - sap
+    - SAP Material Management(MM) 
+    - SAP CRM
+    - SAP SD 
+    - SAP HANA 
+    - SAP Management 
+    - SAP FICO 
+    - SAP Strategic Enterprise Management 
+    - SAP NetWeaver Gateway 
+    - SAP Fiori 
+    - SAP UI5
+    - SAP  Mobile Consulting 
+    - Business Objects Consulting 
+    - SAP Technology 
+
+- intent: info
+  examples: |
+    - I need to view your organization website
+    - website
+    - I need to view your company website
+    - Please provide you comoany website link
+
+- intent: job_apply
+  examples: |
+    - i am looking for a job
+    - job apply
+    - job application submission
+    - how to apply a job
+
+- intent: consulting
+  examples: |
+    - i am looking for consulting
+    - consulting
+    - consulting services
+    
+- intent: tell_name
+  examples: |
+    - what is your name?
+    - tell me your name
+    - what others call you
+    - what should i call you?
+
+- intent: my_name
+  examples: |
+    - my name is [ashish]{"entity":"name","value":"ashish"}
+    - my name is [rahul]{"entity":"name","value":"rahul"}
+    - my name is [apneet]{"entity":"name","value":"apneet"}
+    - [ashish]{"entity":"name","value":"ashish"} is my name
+    - [ashish]{"entity":"name","value":"ashish"} this side
+    - people call me [ashish]{"entity":"name","value":"ashish"}
+
+- intent: mobile_number
+  examples: |
+    - my number is [8209829808]{"entity":"number"}
+    - [8209829808]{"entity":"number"}
+    - [8209829808]{"entity":"number"} is my number
+    - my nobile number is [8209829808]{"entity":"number"}
+
+#- intent: play_video
+#  examples: |
+#    - play the mentioned video
+#    - open the url
+#    - open the link in browser
+#    - show me the video that i asked for
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+
+- intent: send_email
+  examples: |
+    - I want to to send email
+    - Send an email
+    - Send email
+    - email
