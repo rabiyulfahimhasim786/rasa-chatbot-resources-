@@ -124,7 +124,7 @@ class ActionEmail(Action):
         return []
 
 def SendEmail(toaddr,subject,message):
-    fromaddr = "mobileteam.desss@gmail.com"
+    fromaddr = "testing@gmail.com"#from email address
     # instance of MIMEMultipart
     msg = MIMEMultipart()
 
@@ -170,7 +170,7 @@ def SendEmail(toaddr,subject,message):
 
     # Authentication
     try:
-        s.login(fromaddr, "njelbqenzisxmftn")
+        s.login(fromaddr, "testing")# app password
 
         # Converts the Multipart msg into a string
         text = msg.as_string()
